@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sklep", "Sklep\Sklep.csproj", "{83900BC6-0174-4F9E-825A-F5DC2A4AD6F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sklep.Tests", "Sklep.Tests\Sklep.Tests.csproj", "{04BA3B63-4F15-4A69-A158-2FA5FAB178F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{83900BC6-0174-4F9E-825A-F5DC2A4AD6F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83900BC6-0174-4F9E-825A-F5DC2A4AD6F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83900BC6-0174-4F9E-825A-F5DC2A4AD6F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83900BC6-0174-4F9E-825A-F5DC2A4AD6F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04BA3B63-4F15-4A69-A158-2FA5FAB178F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04BA3B63-4F15-4A69-A158-2FA5FAB178F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04BA3B63-4F15-4A69-A158-2FA5FAB178F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04BA3B63-4F15-4A69-A158-2FA5FAB178F3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {542DA37A-A8F7-4FAD-BCB7-D62D646A1244}
+	EndGlobalSection
+EndGlobal
