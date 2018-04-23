@@ -4,18 +4,15 @@ using System.Linq;
 using System.Web;
 using System.Data.Entity;
 using Sklep.Models;
+using Sklep.Migrations;
+using System.Data.Entity.Migrations;
 
 namespace Sklep.DAL
 {
-    public class PrzedmiotInitializer : DropCreateDatabaseAlways<PrzedmiotContext>
+    public class PrzedmiotInitializer : MigrateDatabaseToLatestVersion<PrzedmiotContext, Configuration>
     {
-        protected override void Seed(PrzedmiotContext context)
-        {
-            SeedPrzedmiotData(context);
-            base.Seed(context);
-        }
 
-        private void SeedPrzedmiotData(PrzedmiotContext context)
+        public static void SeedPrzedmiotData(PrzedmiotContext context)
         {
             var kategorie = new List<Kategoria>
             {
@@ -27,7 +24,7 @@ namespace Sklep.DAL
                 new Kategoria() {KategoriaId=6, NazwaKategorii = "Klawiatury", NazwaPlikuIkony="laptop.png", OpisKategorii="Uporządkowany zestaw klawiszy służący do ręcznego sterowania urządzeniem lub ręcznego wprowadzania danych."}
 
             };
-            kategorie.ForEach(k => context.Kategorie.Add(k));
+            kategorie.ForEach(k => context.Kategorie.AddOrUpdate(k));
             context.SaveChanges();
 
             var przedmiot = new List<Przedmiot>
@@ -66,7 +63,7 @@ namespace Sklep.DAL
                 DataDodania=DateTime.Now, OpisPrzedmiotu="Logic LK-12 to niezwykle wygodna i ergonomiczna klawiatura, którą cechuje prostota oraz funkcjonalność. Standardowy układ klawiszy z pełnym blokiem numerycznym umożliwia wygodne i łatwe korzystanie z klawiatury. "},
 
             };
-            przedmiot.ForEach(k => context.Przedmioty.Add(k));
+            przedmiot.ForEach(k => context.Przedmioty.AddOrUpdate(k));
             context.SaveChanges();
 
             }
