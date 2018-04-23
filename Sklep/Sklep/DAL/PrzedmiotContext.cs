@@ -14,6 +14,10 @@ namespace Sklep.DAL
         {
 
         }
+        static PrzedmiotContext()
+        {
+            Database.SetInitializer <PrzedmiotContext>(new PrzedmiotInitializer());
+        }
 
         public DbSet<Przedmiot> Przedmioty { get; set; }
         public DbSet<Kategoria> Kategorie { get; set; }

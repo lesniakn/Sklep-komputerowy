@@ -14,9 +14,7 @@ namespace Sklep.Controllers
 
         public ActionResult Index()
         {
-            Kategoria kategoria = new Kategoria { NazwaKategorii = "Płyty główne", NazwaPlikuIkony = "plytyglowne.png", OpisKategorii = "opis" };
-            db.Kategorie.Add(kategoria);
-            db.SaveChanges();
+            var listaKategorii = db.Kategorie.ToList();
 
             return View();
         }
