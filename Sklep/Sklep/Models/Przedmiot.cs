@@ -8,7 +8,7 @@ namespace Sklep.Models
     public class Przedmiot
     {
         public int PrzedmiotId { get; set; }
-        public int KategoriaId { get; set }
+        public int KategoriaId { get; set; }
         public string NazwaPrzedmiotu { get; set; }
         public string ProducentPrzedmiotu { get; set; }
         public DateTime DataDodania { get; set; }
