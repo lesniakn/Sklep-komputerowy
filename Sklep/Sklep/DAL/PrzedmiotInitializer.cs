@@ -21,7 +21,7 @@ namespace Sklep.DAL
                 new Kategoria() {KategoriaId=3, NazwaKategorii = "Karty dźwiękowe", NazwaPlikuIkony="kartydzwiekowe.png", OpisKategorii="Karty dźwiękowe to części PC, które odpowiadają za obsługę funkcji audio. Podzespoły określane też jako karty muzyczne czuwają nad odtwarzaniem i nagrywaniem dźwięku w komputerze. Choć płyty główne mają zintegrowane karty dźwiękowe, taka dodatkowa pozwala osiągnąć wyższą jakość audio i zapewnia zgodność z nowoczesnymi standardami."},
                 new Kategoria() {KategoriaId=4, NazwaKategorii = "Dyski", NazwaPlikuIkony="dyski.png", OpisKategorii="Dyski zapewniają powierzchnię do przechowywania oprogramowania systemowego, dokumentów, multimediów i innych danych. Dzielimy je ze względu na typ nośnika, format nośnika oraz jego przeznaczenie. Modele należące do poszczególnych grup różnią się dodatkowo pojemnością."},
                 new Kategoria() {KategoriaId=5, NazwaKategorii = "Myszki", NazwaPlikuIkony = "myszki.png", OpisKategorii="Urządzenie wskazujące używane podczas pracy z interfejsem graficznym systemu komputerowego."},
-                new Kategoria() {KategoriaId=6, NazwaKategorii = "Klawiatury", NazwaPlikuIkony="laptop.png", OpisKategorii="Uporządkowany zestaw klawiszy służący do ręcznego sterowania urządzeniem lub ręcznego wprowadzania danych."}
+                new Kategoria() {KategoriaId=6, NazwaKategorii = "Klawiatury", NazwaPlikuIkony="klawiatury.png", OpisKategorii="Uporządkowany zestaw klawiszy służący do ręcznego sterowania urządzeniem lub ręcznego wprowadzania danych."}
 
             };
             kategorie.ForEach(k => context.Kategorie.AddOrUpdate(k));
